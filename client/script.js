@@ -129,9 +129,15 @@ repeatElement.style.display = 'block';
     Outside of your new function, select the button with the id "query-button" and add a click event listener that calls your function.
 */
 
+function query() {
+
  axios.get('http://localhost:3000/repeat?myquery=My-first-query')
  .then(({data}) => console.log(data))
 
+ console.log(response.data)}
+}
+
+const queryButton = document.querySelector("query-button").addEventListener('click', query)
 
 ////////////////
 //INTERMEDIATE//
@@ -144,7 +150,6 @@ repeatElement.style.display = 'block';
     On each iteration of the loop, create a new p element. Set its textContent equal the string at the current index (i) and then append the new p element onto the document's body. 
 */
 
-// Code in the ohMy function in Problem 5
 
 // PROBLEM 10 
 /*
